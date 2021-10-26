@@ -3,6 +3,9 @@
 # Clearing out the terminal 
 clear
 
+# Going to the home direcotry
+cd ~/
+
 # Introduction
 echo "
 ==========================================================================

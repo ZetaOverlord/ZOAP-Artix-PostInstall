@@ -15,6 +15,6 @@ Cd into the cloned directory
 `cd ZOAP-Artix-PostInstall`
 
 Run the shell script
-`sudo bash zoap-pi-script.sh`
+`sudo bash post-install.sh`
 
 --------------------------------------------------

@@ -11,6 +11,9 @@ Install Git with Pacman
 Clone the shell script with Git
 `git clone https://github.com/ZetaOverlord/ZOAP-Artix-PostInstall.git`
 
+Cd into the cloned directory
+`cd ZOAP-Artix-PostInstall'
+
 Run the shell script
 `bash zoap-pi-script.sh`
 

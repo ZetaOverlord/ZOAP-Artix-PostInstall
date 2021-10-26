@@ -42,7 +42,7 @@ Proceed with this in mind.                                                |
 ";
 
 # Root Permission
-sudo su
+sudo -i
 
 # Updating the System
 echo "Checking for system updates...";

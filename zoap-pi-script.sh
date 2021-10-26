@@ -36,7 +36,10 @@ pacman -S --noconfirm base-devel python2 python3
 
 # Cloning the Package Manager Configuration
 echo "Clonning the package manager configuration from the Git repos...";
-git clone https://github.com/ZetaOverlord/pacman-conf-artix.git /etc/ 
+cd 
+git clone https://github.com/ZetaOverlord/pacman-conf-artix.git 
+cd pacman-conf-artix 
+cp ~/pacman-conf-artix /etc/
 
 # Installing Required Packages 
 echo "Installing main functions and applications...";

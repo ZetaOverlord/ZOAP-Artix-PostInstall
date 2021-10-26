@@ -40,6 +40,7 @@ cd
 git clone https://github.com/ZetaOverlord/pacman-conf-artix.git 
 cd pacman-conf-artix 
 cp pacman.conf /etc/
+pacman -Syu --noconfirm
 
 # Installing Required Packages 
 echo "Installing main functions and applications...";

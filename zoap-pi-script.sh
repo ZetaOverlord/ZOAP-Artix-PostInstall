@@ -39,7 +39,7 @@ echo "Clonning the package manager configuration from the Git repos...";
 cd 
 git clone https://github.com/ZetaOverlord/pacman-conf-artix.git 
 cd pacman-conf-artix 
-cp ~/pacman-conf-artix /etc/
+cp pacman.conf /etc/
 
 # Installing Required Packages 
 echo "Installing main functions and applications...";

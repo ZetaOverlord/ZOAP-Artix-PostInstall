@@ -12,7 +12,6 @@ Clone the shell script with Git
 `git clone https://github.com/ZetaOverlord/ZOAP-Artix-PostInstall.git`
 
 Run the shell script
-
 `bash zoap-pi-script.sh`
 
 --------------------------------------------------

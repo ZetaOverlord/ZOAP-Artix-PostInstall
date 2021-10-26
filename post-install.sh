@@ -3,9 +3,6 @@
 # Clearing out the terminal 
 clear
 
-# Root Perms
-sudo -i
-
 # Going to the home direcotry
 cd ~/
 
@@ -37,34 +34,34 @@ My GitHub : https://github.com/ZetaOverlord                               |
 
 # Updating the System
 echo "Checking for system updates...";
-pacman -Syu --noconfirm 
+sudo pacman -Syu --noconfirm 
 
 # Downloading all of the basic requierements
-echo "Installing all of the dependencies..."; 
-pacman -S --noconfirm base-devel python2 python3
+echo "Installing all of the dependencies...";
+sudo pacman -S --noconfirm base-devel python2 python3
 
 # Cloning the pacman.conf files to /etc/ for the Package Manager
-pacman -Syu artix-archlinux-support
+echo "Installing the Arch repositiory support...";
+sudo pacman -Syu artix-archlinux-support
 git clone https://github.com/ZetaOverlord/pacman-conf-artix.git
 cd pacman-conf-artix
-cp pacman.conf /etc/pacman.conf
+echo "Cloning the package manager config file to /etc/...";
+sudo cp pacman.conf /etc/pacman.conf
 cd
-pacman -Syu --noconfirm
+echo "Updating the repositories...";
+sudo pacman -Syu --noconfirm
 
 # Installing Useful functions 
 echo "Installing main functions and applications...";
-pacman -S --noconfirm neofetch htop ranger nvim gparted nitrogen compton
+sudo pacman -S --noconfirm neofetch htop ranger nvim gparted nitrogen compton
 
 # Installing The Required Packages for Reading Certain Files 
 echo "Installing required packages for reading certain extensions...";
-pacman -S --noconfirm mpv feh zathura emacs
+sudo pacman -S --noconfirm mpv feh zathura emacs
 
 # Installing Basic Applications 
 echo "Installing the Applications...";
-pacman -S --noconfirm gimp inkscape kdenlive mumble element-dekstop discord
-
-# Exiting from the root enviorement
-exit
+sudo pacman -S --noconfirm gimp inkscape kdenlive mumble element-dekstop discord
 
 # Installing the AUR Package Manager
 echo "Installing yay AUR Package Mananger...";

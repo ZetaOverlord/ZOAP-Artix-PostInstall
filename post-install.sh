@@ -3,6 +3,9 @@
 # Clearing out the terminal 
 clear
 
+# Root Perms
+sudo -i
+
 # Going to the home direcotry
 cd ~/
 
@@ -30,19 +33,7 @@ process!                                                                  |
 My GitHub : https://github.com/ZetaOverlord                               |
                                                                           |
 ==========================================================================                     
-                                                                          |
-WARNING! This script was specifically created for the Artix distribution! |
-This script will change your package manager configuration which is soley |
-compatable with Artix! If you are using any other Arch-based distribution |
-this may brick your package manager!                                      |
-After you will enter the root password there is no turning back!          |
-Proceed with this in mind.                                                |
-                                                                          |
-==========================================================================
 ";
-
-# Root Permission
-sudo -i
 
 # Updating the System
 echo "Checking for system updates...";
